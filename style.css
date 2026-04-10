@@ -52,3 +52,46 @@
   border-radius: 16px;
   background-color: rgb(245, 245, 245);
 }
+
+.cAmmount {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.button {
+  padding: 1rem 4rem;
+  width: 100%;
+  border-radius: 16px;
+  border: hidden;
+  transition: 0.3s ease-in;
+}
+
+.button:hover {
+  background-color: lightgrey;
+}
+
+.cButtons {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
