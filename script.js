@@ -13,3 +13,7 @@ function addItemToOrder(name, price) {
   var element = document.getElementById("total-price");
   element.innerHTML = total + " €";
 }
+
+function reset() {
+  window.location.reload();
+}
