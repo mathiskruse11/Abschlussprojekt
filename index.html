@@ -11,70 +11,70 @@
       <div class="preisrechner">
         <h2>Preisrechner</h2>
         <div class="grid">
-          <span class="artikel">
-            <p class="product">Kaffee</p>
-            <p class="preis">3,50 €</p>
-          </span>
-          <span class="artikel">
-            <p class="product">Tee</p>
-            <p class="preis">2,50 €</p>
-          </span>
-          <span class="artikel">
-            <p class="product">Apfelschorle</p>
-            <p class="preis">4,00 €</p>
-          </span>
-          <span class="artikel">
-            <p class="product">Wasser</p>
-            <p class="preis">2,00 €</p>
-          </span>
-          <span class="artikel">
-            <p class="product">Bratwurst</p>
-            <p class="preis">5,50 €</p>
-          </span>
-          <span class="artikel">
-            <p class="product">Schnitzel</p>
-            <p class="preis">12,50 €</p>
-          </span>
-          <span class="artikel">
-            <p class="product">Currywurst</p>
-            <p class="preis">6,00 €</p>
-          </span>
-          <span class="artikel">
-            <p class="product">Brezel</p>
-            <p class="preis">4,50 €</p>
-          </span>
-          <span class="artikel">
-            <p class="product">Käsespätzle</p>
-            <p class="preis">8,00 €</p>
-          </span>
-          <span class="artikel">
-            <p class="product">Pommes</p>
-            <p class="preis">3,50 €</p>
-          </span>
-          <span class="artikel">
-            <p class="product">Apfelstrudel</p>
-            <p class="preis">4,50 €</p>
-          </span>
-          <span class="artikel">
-            <p class="product">Berliner</p>
-            <p class="preis">3,00 €</p>
-          </span>
-          <span class="artikel">
-            <p class="product">Swarzwälder</p>
-            <p class="preis">5,00 €</p>
-          </span>
-          <span class="artikel">
-            <p class="product">Brötchen</p>
-            <p class="preis">2,50 €</p>
-          </span>
-          <span class="artikel">
-            <p class="product">Leberkäse</p>
-            <p class="preis">7,00 €</p>
-          </span>
-          <span class="artikel">
-            <p class="product">Kartoffelsalat</p>
-            <p class="preis">6,50 €</p>
-          </span>
+          <div class="artikel" onclick="addItemToOrder('Kaffee', 3.5)">
+            <span class="product">Kaffee</span>
+            <span class="preis">3,50 €</span>
+          </div>
+          <div class="artikel" onclick="addItemToOrder('Tee', 2.5)">
+            <span class="product">Tee</span>
+            <span class="preis">2,50 €</span>
+          </div>
+          <div class="artikel" onclick="addItemToOrder('Apfelschorle', 4.0)">
+            <span class="product">Apfelschorle</span>
+            <span class="preis">4,00 €</span>
+          </div>
+          <div class="artikel" onclick="addItemToOrder('Wasser', 2.0)">
+            <span class="product">Wasser</span>
+            <span class="preis">2,00 €</span>
+          </div>
+          <div class="artikel" onclick="addItemToOrder('Bratwurst', 5.5)">
+            <span class="product">Bratwurst</span>
+            <span class="preis">5,50 €</span>
+          </div>
+          <div class="artikel" onclick="addItemToOrder('Schnitzel', 12.5)">
+            <span class="product">Schnitzel</span>
+            <span class="preis">12,50 €</span>
+          </div>
+          <div class="artikel" onclick="addItemToOrder('Currywurst', 6.0)">
+            <span class="product">Currywurst</span>
+            <span class="preis">6,00 €</span>
+          </div>
+          <div class="artikel" onclick="addItemToOrder('Brezel', 4.5)">
+            <span class="product">Brezel</span>
+            <span class="preis">4,50 €</span>
+          </div>
+          <div class="artikel" onclick="addItemToOrder('Käsespätzle', 8.0)">
+            <span class="product">Käsespätzle</span>
+            <span class="preis">8,00 €</span>
+          </div>
+          <div class="artikel" onclick="addItemToOrder('Pommes', 3.5)">
+            <span class="product">Pommes</span>
+            <span class="preis">3,50 €</span>
+          </div>
+          <div class="artikel" onclick="addItemToOrder('Apfelstrudel', 4.5)">
+            <span class="product">Apfelstrudel</span>
+            <span class="preis">4,50 €</span>
+          </div>
+          <div class="artikel" onclick="addItemToOrder('Berliner', 3.0)">
+            <span class="product">Berliner</span>
+            <span class="preis">3,00 €</span>
+          </div>
+          <div class="artikel" onclick="addItemToOrder('Schwarzwälder', 5.0)">
+            <span class="product">Schwarzwälder</span>
+            <span class="preis">5,00 €</span>
+          </div>
+          <div class="artikel" onclick="addItemToOrder('Brötchen', 2.5)">
+            <span class="product">Brötchen</span>
+            <span class="preis">2,50 €</span>
+          </div>
+          <div class="artikel" onclick="addItemToOrder('Leberkäse', 7.0)">
+            <span class="product">Leberkäse</span>
+            <span class="preis">7,00 €</span>
+          </div>
+          <div class="artikel" onclick="addItemToOrder('Kartoffelsalat', 6.5)">
+            <span class="product">Kartoffelsalat</span>
+            <span class="preis">6,50 €</span>
+          </div>
         </div>
         <br />
         <br />
@@ -83,8 +83,8 @@
         <br />
         <div class="buttons">
           <div class="cAmmount">
-            <h3>Gesamt:</h3>
-            <p class="preis ammount">0,00 €</p>
+            <span>Gesamt:</span>
+            <span id="total-price" class="preis">0,00 €</span>
           </div>
           <button class="red button">Zurücksetzen</button>
           <div class="cButtons">
@@ -94,9 +94,11 @@
         </div>
       </div>
 
-      <div class="bestellung">
+      <div id="orders" class="bestellung">
         <h2>Bestellungen</h2>
+        <br />
       </div>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
