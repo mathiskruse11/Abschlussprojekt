@@ -20,7 +20,7 @@ function reset() {
 
 function booking() {
   alert(
-    "Vielen Dank für Ihre Bestellung! Ihre Bestellung wird zum Verzehr vor Ort bearbeitet. Der gesamte Betrag von " +
+    "Vielen Dank für Ihre Bestellung! Der gesamte Betrag von " +
       total +
       " € wird an der Kasse fällig.",
   );
