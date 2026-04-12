@@ -10,10 +10,6 @@ function addItemToOrder(name, price) {
     name + ": " + price + " €" + "<br />" + "<br />" + "<hr />" + "<br />";
   document.getElementById("orders").appendChild(order);
 
-  showAmmount();
-}
-
-function showAmmount() {
   var element = document.getElementById("total-price");
   element.innerHTML = total + " €";
 }
