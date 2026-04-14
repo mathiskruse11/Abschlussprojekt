@@ -6,16 +6,21 @@ function addItemToOrder(name, price) {
   console.log("Der Gesamtpreis beträgt: " + total + " €");
 
   const order = document.createElement("p");
-  order.innerHTML =
-    name + ": " + price + " €" + "<br />" + "<br />" + "<hr />" + "<br />";
+  order.innerHTML = `<p class="order-item">${name} - ${price} €</p>`;
   document.getElementById("orders").appendChild(order);
-
-  var element = document.getElementById("total-price");
-  element.innerHTML = total + " €";
+  refreshAmmount();
 }
 
 function reset() {
-  window.location.reload();
+  total = 0;
+  console.log(
+    "Die Bestellung wurde zurückgesetzt. Der Gesamtpreis beträgt: " +
+      total +
+      " €",
+  );
+
+  const orders = document.getElementById("orders");
+  orders.innerHTML = "";
 }
 
 function booking() {
@@ -24,7 +29,7 @@ function booking() {
       total +
       " € wird an der Kasse fällig.",
   );
-  reset();
+  (reset(), refreshAmmount());
 }
 
 function delivery() {
@@ -39,6 +44,11 @@ function delivery() {
         total +
         " € inkl. 2,5 € Liefergebühr,  wird bei Lieferung fällig.",
     );
-    reset();
+    (reset(), refreshAmmount());
   }
+}
+
+function refreshAmmount() {
+  const element = document.getElementById("total-price");
+  element.innerHTML = total + " €";
 }
